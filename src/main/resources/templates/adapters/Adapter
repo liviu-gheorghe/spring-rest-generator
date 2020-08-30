@@ -1,0 +1,22 @@
+package {packageName}.adapters;
+
+import {packageName}.models.{modelClass};
+
+import java.util.List;
+
+public class {modelNamePluralCapitalized}Adapter implements IAdapter {
+
+    List<{modelClass}> {modelNamePlural};
+
+    public {modelNamePluralCapitalized}Adapter(List<{modelClass}> {modelNamePlural}) {
+        this.{modelNamePlural} = {modelNamePlural};
+    }
+
+    public List<{modelClass}> get{modelNamePluralCapitalized}() {
+        return authors;
+    }
+
+    public void set{modelNamePluralCapitalized}(List<{modelClass}> {modelNamePlural}) {
+        this.{modelNamePlural} = {modelNamePlural};
+    }
+}

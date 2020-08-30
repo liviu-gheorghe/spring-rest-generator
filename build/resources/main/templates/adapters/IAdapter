@@ -1,0 +1,4 @@
+package {packageName}.adapters;
+
+public interface IAdapter {
+}
