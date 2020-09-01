@@ -1,7 +1,0 @@
-package {packageName}.repositories;
-
-import {packageName}.models.{modelNameCapitalized};
-import org.springframework.data.repository.CrudRepository;
-
-public interface {modelNameCapitalized}Repository extends CrudRepository<{modelNameCapitalized},Integer> {
-}

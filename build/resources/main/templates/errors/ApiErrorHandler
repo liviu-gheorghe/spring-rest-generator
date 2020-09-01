@@ -1,9 +1,0 @@
-package com.liviugheorghe.springproject.errors;
-
-import org.springframework.web.bind.annotation.ControllerAdvice;
-
-@ControllerAdvice
-public abstract class ApiErrorHandler {
-
-    abstract ApiError.ErrorPayload handleError(ApiError apiError);
-}
