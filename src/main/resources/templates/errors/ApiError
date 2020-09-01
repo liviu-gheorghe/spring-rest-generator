@@ -1,0 +1,43 @@
+package com.liviugheorghe.springproject.errors;
+
+public abstract class ApiError extends RuntimeException {
+
+    public ErrorPayload getErrorPayload() {
+        return errorPayload;
+    }
+
+    public void setErrorPayload(ErrorPayload errorPayload) {
+        this.errorPayload = errorPayload;
+    }
+
+    private ErrorPayload errorPayload;
+
+    public ApiError(String message) {
+        this.errorPayload = new ErrorPayload(message);
+    }
+
+
+    public static class ErrorPayload {
+        private String message;
+
+        public ErrorPayload(String message) {
+            this.message = message;
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+    }
+
+    public String getMessage() {
+        return errorPayload.getMessage();
+    }
+
+    public void setMessage(String message) {
+        this.errorPayload.setMessage(message);
+    }
+}

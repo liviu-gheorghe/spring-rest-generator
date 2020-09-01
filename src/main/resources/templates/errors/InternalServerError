@@ -1,0 +1,12 @@
+package com.liviugheorghe.springproject.errors;
+
+public class InternalServerError extends ApiError {
+
+    public InternalServerError() {
+        super("Internal Server Error");
+    }
+
+    public InternalServerError(String message) {
+        super(message);
+    }
+}
