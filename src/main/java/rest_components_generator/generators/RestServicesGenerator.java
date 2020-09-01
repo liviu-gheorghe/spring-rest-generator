@@ -1,7 +1,9 @@
-package rest_components_generator;
+package rest_components_generator.generators;
+
+import rest_components_generator.Models;
 
 @Generator
-public class RestServicesGenerator extends ComponentGenerator{
+public class RestServicesGenerator extends ComponentGenerator {
 
     public RestServicesGenerator(Models models) {
         super(models);

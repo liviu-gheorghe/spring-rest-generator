@@ -1,4 +1,4 @@
-package rest_components_generator;
+package rest_components_generator.generators;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

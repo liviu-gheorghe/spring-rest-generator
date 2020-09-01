@@ -1,4 +1,13 @@
-package {packageName}.models;
+package {packageName}.services;
 
-public interface IModel {
+import {packageName}.models.IModel;
+
+import java.util.List;
+
+public interface IService<T> {
+    List<T> getAll();
+    List<T> getById(Integer id);
+    List<T> add(T model);
+    List<T> update(T model);
+    List<T> delete(Integer id);
 }

@@ -1,5 +1,6 @@
-package rest_components_generator;
+package rest_components_generator.generators;
 
+import rest_components_generator.Models;
 import util.FileUtils;
 
 import java.io.IOException;

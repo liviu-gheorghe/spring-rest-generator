@@ -1,5 +1,7 @@
-package rest_components_generator;
+package rest_components_generator.generators;
 
+import rest_components_generator.ModelData;
+import rest_components_generator.Models;
 import util.Pair;
 import util.StringUtils;
 

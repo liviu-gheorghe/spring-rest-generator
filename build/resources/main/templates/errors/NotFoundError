@@ -1,0 +1,11 @@
+package com.liviugheorghe.springproject.errors;
+
+public class NotFoundError extends ApiError {
+    public NotFoundError() {
+        super("Not found");
+    }
+
+    public NotFoundError(String message) {
+        super(message);
+    }
+}

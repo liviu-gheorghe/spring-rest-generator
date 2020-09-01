@@ -203,6 +203,11 @@ public class ProjectGenerator {
             return this;
         }
 
+        public Builder addModel(String model) {
+            generator.addModel(model);
+            return this;
+        }
+
         public Builder setBootLevel(String bootLevel) {
             generator.bootVersion = bootLevel;
             return this;
